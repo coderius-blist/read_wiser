@@ -1,0 +1,6 @@
+.env
+data/quotes.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
