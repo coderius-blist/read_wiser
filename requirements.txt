@@ -4,3 +4,7 @@ beautifulsoup4
 httpx
 apscheduler
 python-dotenv
+
+# Testing
+pytest>=7.0
+pytest-asyncio>=0.21
