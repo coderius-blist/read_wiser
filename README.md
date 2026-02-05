@@ -23,7 +23,7 @@ A Telegram bot for saving, organizing, and rediscovering quotes from the web. Co
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/bramvanduinen/flashback_bot.git
+   git clone https://github.com/coderius-blist/read_wiser.git
    cd read_wiser
    ```
 
@@ -95,15 +95,25 @@ Environment variables (set in `.env`):
 
 ## Deployment
 
-### Fly.io
+### Railway
 
-The project includes a `fly.toml` for deployment to Fly.io:
+This project is deployed on [Railway](https://railway.app):
 
-```bash
-fly launch
-fly secrets set TELEGRAM_BOT_TOKEN=your_token_here
-fly deploy
-```
+1. **Connect your repository**:
+   - Go to [Railway](https://railway.app)
+   - Create a new project from your GitHub repo
+
+2. **Add environment variables**:
+   - `TELEGRAM_BOT_TOKEN` - Your bot token from BotFather
+   - `DIGEST_ENABLED` - (optional) `true` or `false`
+   - `DIGEST_DAY` - (optional) Day of the week
+   - `DIGEST_TIME` - (optional) Time in 24h format
+   - `DAILY_QUOTE_ENABLED` - (optional) `true` or `false`
+   - `DAILY_QUOTE_TIME` - (optional) Time in 24h format
+
+3. **Deploy**:
+   - Railway will automatically deploy on every push to main
+   - The bot will start running immediately
 
 ## Project Structure
 
