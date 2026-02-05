@@ -58,7 +58,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["src"]
+known-first-party = ["src", "config"]
 
 [tool.ruff.format]
 quote-style = "double"
